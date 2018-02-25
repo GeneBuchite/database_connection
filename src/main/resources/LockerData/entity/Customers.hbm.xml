@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 19, 2018 4:28:02 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="LockerData.entity.Customers" table="customers" catalog="lockerdata" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="fullName" type="string">
+            <column name="FullName" length="250" />
+        </property>
+        <property name="fname" type="string">
+            <column name="FName" length="150" />
+        </property>
+        <property name="lname" type="string">
+            <column name="LName" length="150" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="40" />
+        </property>
+        <property name="city" type="string">
+            <column name="City" length="20" />
+        </property>
+        <property name="state" type="string">
+            <column name="State" length="3" />
+        </property>
+        <property name="zip" type="string">
+            <column name="Zip" length="12" not-null="true" />
+        </property>
+        <property name="dateEntered" type="timestamp">
+            <column name="DateEntered" length="19" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="30" />
+        </property>
+        <property name="workPhone" type="string">
+            <column name="WorkPhone" length="30" />
+        </property>
+        <property name="cellPh" type="string">
+            <column name="CellPh" length="50" />
+        </property>
+        <property name="notes" type="string">
+            <column name="Notes" />
+        </property>
+        <property name="ssn" type="string">
+            <column name="SSN" length="20" />
+        </property>
+        <property name="dob" type="timestamp">
+            <column name="DOB" length="19" />
+        </property>
+        <property name="badCheck" type="timestamp">
+            <column name="BadCheck" length="19" />
+        </property>
+        <property name="approvedDate" type="timestamp">
+            <column name="ApprovedDate" length="19" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
